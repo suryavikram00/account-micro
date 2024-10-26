@@ -2315,3 +2315,1081 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.api
 2024-10-27 01:58:29 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-27 01:58:29 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
 2024-10-27 01:58:29 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 32ms. Found 1 repository interfaces.
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 01:58:54 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 619 ms
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 01:58:55 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 01:58:55 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 01:58:55 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 01:58:55 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 01:58:55 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 01:58:55 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 01:58:55 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 1.836 seconds (JVM running for 2.132)
+2024-10-27 01:59:08 +0530 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 01:59:08 +0530 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 01:59:08 +0530 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 4 ms
+2024-10-27 01:59:08 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 01:59:15 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 01:59:15 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:01:18 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:01:18 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:01:18 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:01:18 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:06:37 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:06:37 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 34ms. Found 1 repository interfaces.
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 676 ms
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:06:38 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:06:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:06:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:06:39 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:06:39 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:06:39 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:06:39 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:06:39 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 2.01 seconds (JVM running for 2.309)
+2024-10-27 02:06:44 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:06:44 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:06:44 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:06:44 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:07:14 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:07:14 +0530 [http-nio-8082-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:07:22 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:07:22 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:07:22 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:07:22 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:08:57 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 1127 ms
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:08:58 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:08:59 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:08:59 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:08:59 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:08:59 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:08:59 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:08:59 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:09:00 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:09:00 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:09:00 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:09:00 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:09:00 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 3.398 seconds (JVM running for 3.798)
+2024-10-27 02:10:47 +0530 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:10:47 +0530 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:10:47 +0530 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 4 ms
+2024-10-27 02:10:47 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:10:47 +0530 [http-nio-8082-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:10:56 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:11:28 +0530 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:11:28 +0530 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:11:28 +0530 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:11:28 +0530 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 3ms. Found 1 repository interfaces.
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:11:28 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 135 ms
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-2 - Starting...
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-2 - Start completed.
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:11:28 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:11:28 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:11:28 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:11:28 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:11:28 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:11:28 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.352 seconds (JVM running for 152.217)
+2024-10-27 02:11:28 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:12:23 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:12:23 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:12:23 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:12:23 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:12:23 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:17:03 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:17:21 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:17:21 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:17:21 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-2 - Shutdown initiated...
+2024-10-27 02:17:21 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-2 - Shutdown completed.
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 32ms. Found 1 repository interfaces.
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:19:38 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 603 ms
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:19:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:19:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:19:39 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:19:39 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:19:39 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:19:39 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:19:39 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:19:39 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:19:40 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 1.826 seconds (JVM running for 2.122)
+2024-10-27 02:19:42 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:19:42 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:19:42 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 4 ms
+2024-10-27 02:19:42 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:19:51 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:19:51 +0530 [http-nio-8082-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:20:46 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:20:46 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:20:46 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:20:46 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:29:00 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 31ms. Found 1 repository interfaces.
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 584 ms
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:29:01 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:29:02 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:29:02 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:29:02 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:29:02 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:29:02 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:29:02 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:29:02 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:29:02 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 1.729 seconds (JVM running for 2.036)
+2024-10-27 02:29:06 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:29:06 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:29:06 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 4 ms
+2024-10-27 02:29:06 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:29:06 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:29:54 +0530 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:29:54 +0530 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:29:54 +0530 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:29:54 +0530 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 8ms. Found 1 repository interfaces.
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:29:54 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 292 ms
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-2 - Starting...
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-2 - Start completed.
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:29:54 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:29:54 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:29:54 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:29:55 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:29:55 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:29:55 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:29:55 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:29:55 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:29:55 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:29:55 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:29:55 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.777 seconds (JVM running for 54.878)
+2024-10-27 02:29:55 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:29:56 +0530 [Thread-9] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:29:56 +0530 [Thread-9] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:29:56 +0530 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-2 - Shutdown initiated...
+2024-10-27 02:29:56 +0530 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-2 - Shutdown completed.
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 7ms. Found 1 repository interfaces.
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:29:56 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 173 ms
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-3 - Starting...
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-3 - Start completed.
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:29:56 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:29:56 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:29:56 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:29:56 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:29:56 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:29:57 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:29:57 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.375 seconds (JVM running for 56.705)
+2024-10-27 02:29:57 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:30:04 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:30:04 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:30:04 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 4 ms
+2024-10-27 02:30:04 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:30:04 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:30:08 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_ 
+    from
+        account accountent0_
+2024-10-27 02:30:18 +0530 [Thread-17] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:30:18 +0530 [Thread-17] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:30:18 +0530 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-3 - Shutdown initiated...
+2024-10-27 02:30:18 +0530 [Thread-17] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-3 - Shutdown completed.
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:30:18 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 111 ms
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-4 - Starting...
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-4 - Start completed.
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:30:18 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:30:18 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:30:18 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:30:19 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:30:19 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:30:19 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:30:19 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:30:19 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.293 seconds (JVM running for 78.74)
+2024-10-27 02:30:19 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:30:22 +0530 [Thread-25] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:30:22 +0530 [Thread-25] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:30:22 +0530 [Thread-25] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-4 - Shutdown initiated...
+2024-10-27 02:30:22 +0530 [Thread-25] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-4 - Shutdown completed.
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 5ms. Found 1 repository interfaces.
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:30:22 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 146 ms
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-5 - Starting...
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-5 - Start completed.
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:30:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:30:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:30:22 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:30:22 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:30:22 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:30:22 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.332 seconds (JVM running for 82.541)
+2024-10-27 02:30:22 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:30:31 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:30:31 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:30:31 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:30:31 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:30:37 +0530 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:30:37 +0530 [http-nio-8082-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:32:50 +0530 [Thread-33] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:32:50 +0530 [Thread-33] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:32:50 +0530 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-5 - Shutdown initiated...
+2024-10-27 02:32:50 +0530 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-5 - Shutdown completed.
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:32:51 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 141 ms
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-6 - Starting...
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-6 - Start completed.
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:32:51 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:32:51 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:32:51 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:32:51 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:32:51 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:32:51 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.334 seconds (JVM running for 231.045)
+2024-10-27 02:32:51 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:32:55 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:32:55 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:32:55 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 2 ms
+2024-10-27 02:32:55 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:32:55 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:34:38 +0530 [Thread-41] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:34:38 +0530 [Thread-41] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:34:39 +0530 [Thread-41] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-6 - Shutdown initiated...
+2024-10-27 02:34:39 +0530 [Thread-41] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-6 - Shutdown completed.
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:34:39 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 140 ms
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-7 - Starting...
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-7 - Start completed.
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:34:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:34:39 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:34:39 +0530 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 60) - Unable to start LiveReload server
+2024-10-27 02:34:39 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:34:39 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:34:39 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.317 seconds (JVM running for 339.056)
+2024-10-27 02:34:39 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:34:40 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:34:40 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:34:40 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-7 - Shutdown initiated...
+2024-10-27 02:34:40 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-7 - Shutdown completed.
+2024-10-27 02:35:32 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:35:32 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:35:32 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2024-10-27 02:35:32 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:35:32 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 1134 ms
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:35:33 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:35:34 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:35:34 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:35:34 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:35:34 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:35:34 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:35:34 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:35:35 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:35:35 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:35:35 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 3.555 seconds (JVM running for 3.988)
+2024-10-27 02:35:44 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:35:44 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:35:44 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:35:45 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:35:52 +0530 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:35:52 +0530 [http-nio-8082-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:36:15 +0530 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:36:15 +0530 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:36:15 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:36:15 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:37:20 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:37:20 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:37:20 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 47ms. Found 1 repository interfaces.
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 1026 ms
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:37:21 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:37:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:37:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:37:22 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:37:22 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:37:22 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:37:22 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:37:23 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:37:23 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:37:23 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 2.944 seconds (JVM running for 3.29)
+2024-10-27 02:37:37 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:37:37 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:37:37 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:37:37 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:37:37 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:38:55 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:38:55 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:38:55 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:38:55 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 36ms. Found 1 repository interfaces.
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:39:33 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 660 ms
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:39:34 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:39:34 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:39:34 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:39:34 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:39:34 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:39:34 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:39:34 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:39:35 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:39:35 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 2.001 seconds (JVM running for 2.3)
+2024-10-27 02:39:42 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:39:42 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:39:42 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 2 ms
+2024-10-27 02:39:42 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:39:42 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:41:19 +0530 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:19 +0530 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:19 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:41:19 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:41:19 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:41:19 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:41:19 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 6ms. Found 1 repository interfaces.
+2024-10-27 02:41:19 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:41:19 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:41:19 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 202 ms
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-2 - Starting...
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-2 - Start completed.
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:41:20 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:41:20 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:41:20 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:41:20 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:20 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.511 seconds (JVM running for 107.531)
+2024-10-27 02:41:20 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:41:26 +0530 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:26 +0530 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:26 +0530 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-2 - Shutdown initiated...
+2024-10-27 02:41:26 +0530 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-2 - Shutdown completed.
+2024-10-27 02:41:26 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:41:26 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:41:26 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 10ms. Found 1 repository interfaces.
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:41:27 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 201 ms
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-3 - Starting...
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-3 - Start completed.
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:41:27 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:41:27 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:41:27 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:41:27 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:27 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.466 seconds (JVM running for 114.534)
+2024-10-27 02:41:27 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:41:31 +0530 [Thread-19] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:31 +0530 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:31 +0530 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-3 - Shutdown initiated...
+2024-10-27 02:41:31 +0530 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-3 - Shutdown completed.
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:41:31 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 141 ms
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-4 - Starting...
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-4 - Start completed.
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:41:31 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:41:31 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:41:31 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:41:31 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:31 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.334 seconds (JVM running for 118.747)
+2024-10-27 02:41:31 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:41:48 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:41:48 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:41:48 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-4 - Shutdown initiated...
+2024-10-27 02:41:48 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-4 - Shutdown completed.
+2024-10-27 02:41:59 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 36ms. Found 1 repository interfaces.
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 667 ms
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:42:00 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:42:01 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:42:01 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:42:01 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:01 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:01 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:01 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:42:01 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 2.05 seconds (JVM running for 2.345)
+2024-10-27 02:42:10 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:42:10 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:42:10 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:42:10 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:42:10 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:42:12 +0530 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:42:12 +0530 [http-nio-8082-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:42:12 +0530 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:42:12 +0530 [http-nio-8082-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:42:22 +0530 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:22 +0530 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:22 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:42:22 +0530 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 5ms. Found 1 repository interfaces.
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:42:22 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 141 ms
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-2 - Starting...
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-2 - Start completed.
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:42:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:42:22 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:42:22 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:22 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:22 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.349 seconds (JVM running for 23.335)
+2024-10-27 02:42:22 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:42:28 +0530 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:28 +0530 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:28 +0530 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-2 - Shutdown initiated...
+2024-10-27 02:42:28 +0530 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-2 - Shutdown completed.
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:42:28 +0530 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry.log (line : 173) - The MBean registry cannot be disabled because it has already been initialised
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 138 ms
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-3 - Starting...
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-3 - Start completed.
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:42:28 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:42:28 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:42:28 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:28 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:28 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 0.325 seconds (JVM running for 29.164)
+2024-10-27 02:42:28 +0530 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent (line : 63) - Condition evaluation unchanged
+2024-10-27 02:42:31 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:31 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:31 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-3 - Shutdown initiated...
+2024-10-27 02:42:31 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-3 - Shutdown completed.
+2024-10-27 02:42:55 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStartupProfileInfo (line : 655) - The following profiles are active: local
+2024-10-27 02:42:55 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 126) - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-10-27 02:42:55 +0530 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn (line : 182) - Finished Spring Data repository scanning in 34ms. Found 1 repository interfaces.
+2024-10-27 02:42:55 +0530 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope.setSerializationId (line : 295) - BeanFactory id=8bde031f-fd3c-368e-9b19-45dfaec3f808
+2024-10-27 02:42:55 +0530 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization (line : 330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize (line : 92) - Tomcat initialized with port(s): 8082 (http)
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.a.catalina.core.StandardService.log (line : 173) - Starting service [Tomcat]
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log (line : 173) - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring embedded WebApplicationContext
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext (line : 284) - Root WebApplicationContext: initialization completed in 697 ms
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation (line : 31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  org.hibernate.Version.logVersion (line : 46) - HHH000412: Hibernate Core {5.4.6.Final}
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> (line : 49) - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 110) - HikariPool-1 - Starting...
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection (line : 123) - HikariPool-1 - Start completed.
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> (line : 172) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-10-27 02:42:56 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       drop index UK_csqiqkrbqxe20l8ku84bxoxla
+2024-10-27 02:42:56 +0530 [restartedMain] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    
+    alter table account 
+       add constraint UK_csqiqkrbqxe20l8ku84bxoxla unique (name)
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService (line : 52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory (line : 416) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer (line : 57) - LiveReload server is running on port 35729
+2024-10-27 02:42:56 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:56 +0530 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource.<init> (line : 121) - No URLs will be polled as dynamic configuration sources.
+2024-10-27 02:42:56 +0530 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource.<init> (line : 122) - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-10-27 02:42:56 +0530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor (line : 220) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-27 02:42:57 +0530 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize (line : 171) - Initializing ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:42:57 +0530 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists (line : 106) - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-10-27 02:42:57 +0530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start (line : 204) - Tomcat started on port(s): 8082 (http) with context path ''
+2024-10-27 02:42:57 +0530 [restartedMain] INFO  c.f.a.AccountMicroApplication.logStarted (line : 61) - Started AccountMicroApplication in 2.095 seconds (JVM running for 2.446)
+2024-10-27 02:43:04 +0530 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log (line : 173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-27 02:43:04 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 525) - Initializing Servlet 'dispatcherServlet'
+2024-10-27 02:43:04 +0530 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean (line : 547) - Completed initialization in 3 ms
+2024-10-27 02:43:04 +0530 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_0_,
+        accountent0_.name as name2_0_0_ 
+    from
+        account accountent0_ 
+    where
+        accountent0_.id=?
+2024-10-27 02:43:04 +0530 [http-nio-8082-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder.bind (line : 64) - binding parameter [1] as [BIGINT] - [1]
+2024-10-27 02:43:12 +0530 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL.logStatement (line : 127) - 
+    select
+        accountent0_.id as id1_0_,
+        accountent0_.name as name2_0_ 
+    from
+        account accountent0_
+2024-10-27 02:43:20 +0530 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown (line : 208) - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 02:43:20 +0530 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy (line : 598) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-27 02:43:20 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 350) - HikariPool-1 - Shutdown initiated...
+2024-10-27 02:43:20 +0530 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close (line : 352) - HikariPool-1 - Shutdown completed.
