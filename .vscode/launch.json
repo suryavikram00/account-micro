@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-AccountMicroApplication<account_micro>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.feign.account_micro.AccountMicroApplication",
+      "projectName": "account_micro",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
