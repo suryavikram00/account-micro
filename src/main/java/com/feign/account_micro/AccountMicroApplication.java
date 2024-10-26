@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.api.open.crud.api")
+// @ComponentScan(basePackages = "com.api.open.crud.api")
 public class AccountMicroApplication {
 
 	public static void main(String[] args) {
